@@ -4,16 +4,22 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
+}
+
+section {
+  max-width: 1600px;
 }
 
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  align-items: center;
 }
 main section.view1 {
   width: 100%;
@@ -31,13 +37,91 @@ main section.view1 .bottom h1 {
   font-size: 3.8rem;
   text-align: center;
 }
+main section.view2 {
+  width: 100%;
+  padding: 1rem;
+}
+main section.view2 p {
+  text-align: center;
+  font-size: 2.4rem;
+}
+main section.view3 {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+main section.view3 .card1 {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1rem;
+  border-top: 4px solid rgba(93, 93, 93, 0.803);
+}
+main section.view3 .card1 h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+main section.view3 .card1 p {
+  font-size: 1.2rem;
+  color: rgba(35, 35, 35, 0.825);
+}
+main section.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+main section.view4 .top {
+  width: 100%;
+}
+main section.view4 .top img {
+  width: 100%;
+}
+main section.view4 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main section.view4 .bottom h2 {
+  font-size: 1.6rem;
+}
+main section.view4 .bottom h1 {
+  font-size: 3rem;
+}
+main section.view4 .bottom p {
+  font-size: 1.4rem;
+}
+main section.view4 .bottom .text-area {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+main section.view4 .bottom .text-area button {
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(52, 30, 254);
+  background-color: #fff;
+  font-size: 1.2rem;
+  color: #2727ff;
+}
+main section.view4 .bottom .text-area p {
+  font-weight: 600;
+}
 
 @media (min-width: 900px) {
   main section.view1 {
     flex-direction: row-reverse;
     justify-content: center;
   }
-  main section.view1 .top, main section.view1 .bottom {
+  main section.view1 .top,
+  main section.view1 .bottom {
     width: 50%;
   }
   main section.view1 .top {
@@ -54,5 +138,51 @@ main section.view1 .bottom h1 {
     text-align: left;
     font-size: 4.5rem;
     font-weight: 900;
+  }
+  main section.view2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main section.view2 p {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+  main section.view3 {
+    flex-direction: row;
+  }
+  main section.view3 .card1 {
+    width: 25%;
+  }
+  main section.view4 {
+    flex-direction: row-reverse;
+  }
+  main section.view4 .top {
+    width: 50%;
+  }
+  main section.view4 .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.view4 .bottom h2 {
+    width: 50%;
+    text-align: left;
+  }
+  main section.view4 .bottom h1 {
+    text-align: left;
+    width: 50%;
+  }
+  main section.view4 .bottom p {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+  main section.view4 .bottom .text-area {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main section.view4 .bottom .text-area button {
+    padding: 0.5rem 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
