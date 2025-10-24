@@ -15,22 +15,25 @@ body {
     flex-direction: column;
     gap: $gap;
 }
-section{
+
+section {
     max-width: 1600px;
-    
+
 }
 
 main {
     width: 100%;
-    @include flexColom(2rem);
+    @include flexColom(2.5rem);
     align-items: center;
 
     section.view1 {
         width: 100%;
         @include flexColom(4rem);
-
+        padding: 1rem;
         // padding: 1rem;
         // justify-content: space-between;
+        background-image: linear-gradient((35deg, rgb(252, 221, 232), rgb(243, 252, 255) 60%));
+
         .top {
 
             // width: 100%;
@@ -54,6 +57,7 @@ main {
         width: 100%;
         padding: 1rem;
 
+        // background-image: linear-gradient((35deg, rgb(252, 221, 232), rgb(243, 252, 255) 60%));/
         p {
             text-align: center;
             font-size: 2.4rem;
@@ -119,10 +123,12 @@ main {
                 width: 100%;
                 display: flex;
                 gap: 2rem;
-                align-items: center;
+                flex-direction: column;
+                align-items: start;
+
 
                 button {
-                    padding: 0.8rem 2rem;
+                    padding: 0.5rem 1.6rem;
                     border-radius: 2rem;
                     border: 1px solid rgb(52, 30, 254);
                     background-color: #fff;
@@ -131,6 +137,8 @@ main {
                 }
 
                 p {
+                    padding: 0.8rem;
+                    font-size: 1.2rem;
                     font-weight: 600;
                 }
             }
@@ -138,6 +146,194 @@ main {
         }
     }
 
+    section.view5 {
+        width: 100%;
+        @include flexColom(1rem);
+        padding: 1rem;
+        background-image: linear-gradient((35deg, rgb(252, 252, 226) 40%, rgb(245, 251, 254) 90%));
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .bottom {
+            @include flexColom(1.5rem);
+
+            .first {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .second {
+                font-size: 1.2rem;
+            }
+
+            button {
+                width: fit-content;
+                padding: 0.7rem 1.8rem;
+                border-radius: 2rem;
+                background-color: blue;
+                font-weight: 600;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+
+    section.view6 {
+        width: 100%;
+        @include flexColom(1rem);
+        padding: 1rem;
+
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .bottom {
+            @include flexColom(1.5rem);
+
+            .first {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .second {
+                font-size: 1.3rem;
+            }
+
+            button {
+                width: fit-content;
+                padding: 0.7rem 2rem;
+                border-radius: 2rem;
+                border: 2px solid blue;
+                color: blue;
+
+                font-weight: 600;
+                // color: #fff;
+                // border: none
+            }
+        }
+    }
+
+    section.view7 {
+        width: 100%;
+        @include flexColom(1rem);
+        padding: 1rem;
+        background-image: linear-gradient((35deg, rgb(252, 252, 226) 40%, rgb(245, 251, 254) 90%));
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .bottom {
+            @include flexColom(1.5rem);
+
+            .first {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .second {
+                font-size: 1.2rem;
+            }
+
+            button {
+                width: fit-content;
+                padding: 0.7rem 1.8rem;
+                border-radius: 2rem;
+                background-color: blue;
+                font-weight: 600;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+
+    section.view8 {
+        width: 100%;
+        @include flexColom(1rem);
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        .inner {
+
+            border-radius: 2rem;
+            width: 95%;
+            @include flexColom(2rem);
+
+            padding: 6.5rem 0rem;
+            background-color: #042449;
+            background-image: url(./img8.png);
+            background-size: cover;
+            background-position: center;
+
+            .top {
+                padding-left: 3.5rem;
+                width: 100%;
+                // background-color: black;
+                @include flexColom(1rem);
+
+                h1 {
+                    width: 80%;
+                    font-size: 3rem;
+                    color: #fff;
+                    text-align: left;  
+                    // background-color: red;          
+                }
+                p {
+                    width: 82%;
+                    font-size: 1.3rem;
+                    color: #fff;
+                }
+            }
+            .bottom{
+                display: flex;
+                padding-left: 3.5rem;
+                gap: 2rem;
+                align-items: center;
+                button{
+                    padding: 0.6rem 2rem;
+                    border-radius: 2rem;
+                    border: none;
+                    color: #3b35e8;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #fff;
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
 
 
 }
@@ -205,34 +401,192 @@ main {
             }
 
             .bottom {
-                display: flex;
-               align-items: center;
-               justify-content: center;
-            h2{
-                width: 50%;
-                text-align: left;
-            }
+            //  background-color: #9e2020;
+             display: flex;
+ 
+             
+             justify-content: center;
+             align-items: center;
+                h2 {
+                    width: 50%;
+                    text-align: left;
+                }
 
                 h1 {
-                  text-align: left;
-                //   background-color: red;
-                  width: 50%;
+                    text-align: left;
+                    //   background-color: red;
+                    width: 50%;
                 }
 
                 p {
                     width: 50%;
                     font-size: 1.3rem;
                 }
+
                 .text-area{
                     display: flex;
+                    flex-direction: row;
+                    align-items: center;
                     justify-content: flex-end;
-                    // background-color: red;
-                    button{
+
+                    button {
                         padding: 0.5rem 1rem;
                     }
                 }
 
             }
         }
+
+        section.view5 {
+            flex-direction: row;
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+
+            .top {
+                // background-color: #ff0000;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                    width: 65%;
+                }
+            }
+
+            .bottom {
+                padding: 1rem;
+                gap: 2rem;
+
+                .first {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                h1 {
+                    width: 60%;
+                    font-size: 4rem;
+                }
+
+                .second {
+                    width: 60%;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        section.view6 {
+            flex-direction: row-reverse;
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+
+            .top {
+                // background-color: #ff0000;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                    width: 65%;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+
+                .first {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 58%;
+                    // background-color: red;
+                }
+
+                h1 {
+                    width: 60%;
+                    font-size: 4rem;
+                }
+
+                .second {
+                    width: 60%;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
+
+                button {
+                    text-align: left;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        section.view7 {
+            flex-direction: row;
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+
+            .top {
+                // background-color: #ff0000;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                    width: 65%;
+                }
+            }
+
+            .bottom {
+                padding: 1rem;
+                gap: 2rem;
+
+                .first {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                h1 {
+                    width: 60%;
+                    font-size: 4rem;
+                }
+
+                .second {
+                    width: 60%;
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+        section.view8{
+            .inner{
+                width: 80%;
+                padding: 5rem 0rem;
+                .top{
+                    padding-left: 6rem;
+                    h1{
+                        font-size: 4rem;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+                .bottom{
+                    padding-left: 6rem;
+                }
+            }
+        }
+
     }
 }
